@@ -1,0 +1,63 @@
+{
+  // editor
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Fira Code, Cascadia Code PL",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "workbench.iconTheme": null,
+  "editor.linkedEditing": true,
+  "files.autoSave": "afterDelay",
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  // cursor
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+
+  //config related to code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+
+  //terminal
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono Retina",
+  "workbench.iconTheme": "vscode-icons",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "python.pythonPath": "C:\\Users\\nibir\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
+  "liveServer.settings.donotVerifyTags": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "liveServer.settings.root": "",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  //telemetry service
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.colorTheme": "GitHub Dark"
+}

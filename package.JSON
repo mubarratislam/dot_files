@@ -1,0 +1,208 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2022-02-10T11:59:30.365-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "JGraph.Draw",
+					"Version" : "16.5.1"
+				},
+				{
+					"PackageIdentifier" : "AIMP.AIMP",
+					"Version" : "v5.01.2358, 28.12.2021"
+				},
+				{
+					"PackageIdentifier" : "Lexikos.AutoHotkey",
+					"Version" : "1.1.33.10"
+				},
+				{
+					"PackageIdentifier" : "OmicronLab.Avro",
+					"Version" : "5.6.0"
+				},
+				{
+					"PackageIdentifier" : "Piriform.CCleaner",
+					"Version" : "5.89"
+				},
+				{
+					"PackageIdentifier" : "Canonical.Ubuntu",
+					"Version" : "2004.2021.825.0"
+				},
+				{
+					"PackageIdentifier" : "Foxit.FoxitReader",
+					"Version" : "11.2.1.53537"
+				},
+				{
+					"PackageIdentifier" : "Git.Git",
+					"Version" : "2.35.1.2"
+				},
+				{
+					"PackageIdentifier" : "Google.Chrome",
+					"Version" : "98.0.4758.82"
+				},
+				{
+					"PackageIdentifier" : "IrfanSkiljan.IrfanView",
+					"Version" : "4.59"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge",
+					"Version" : "98.0.1108.43"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime",
+					"Version" : "98.0.1108.43"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal",
+					"Version" : "1.12.10334.0"
+				},
+				{
+					"PackageIdentifier" : "Notepad++.Notepad++",
+					"Version" : "8.3"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Office",
+					"Version" : "16.0.14827.20192"
+				},
+				{
+					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh",
+					"Version" : "7.16.1"
+				},
+				{
+					"PackageIdentifier" : "ProtonTechnologies.ProtonVPN",
+					"Version" : "1.25.0"
+				},
+				{
+					"PackageIdentifier" : "VideoLAN.VLC",
+					"Version" : "3.0.16"
+				},
+				{
+					"PackageIdentifier" : "Notion.Notion",
+					"Version" : "2.0.18"
+				},
+				{
+					"PackageIdentifier" : "qBittorrent.qBittorrent",
+					"Version" : "4.4.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2013Redist-x64",
+					"Version" : "12.0.40664.0"
+				},
+				{
+					"PackageIdentifier" : "SoftDeluxe.FreeDownloadManager",
+					"Version" : "6.15.3.4236"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell",
+					"Version" : "7.2.1.0"
+				},
+				{
+					"PackageIdentifier" : "OpenMedia.4KVideoDownloader",
+					"Version" : "4.19.4.4720"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2010Redist-x64",
+					"Version" : "10.0.40219"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2008Redist-x86",
+					"Version" : "9.0.30729.4148"
+				},
+				{
+					"PackageIdentifier" : "GitHub.cli",
+					"Version" : "2.5.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x64",
+					"Version" : "14.29.30139.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86",
+					"Version" : "11.0.61030.0"
+				},
+				{
+					"PackageIdentifier" : "Oracle.VirtualBox",
+					"Version" : "6.1.32"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2008Redist-x64",
+					"Version" : "9.0.30729.4148"
+				},
+				{
+					"PackageIdentifier" : "DuongDieuPhap.ImageGlass",
+					"Version" : "8.5.1.22"
+				},
+				{
+					"PackageIdentifier" : "Giorgiotani.Peazip",
+					"Version" : "8.4.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.dotnetRuntime.3-x64",
+					"Version" : "3.1.22.30721"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2005Redist-x86",
+					"Version" : "8.0.61001"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode",
+					"Version" : "1.64.1"
+				},
+				{
+					"PackageIdentifier" : "Famatech.AdvancedIPScanner",
+					"Version" : "2.5.3850"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2013Redist-x86",
+					"Version" : "12.0.40664.0"
+				},
+				{
+					"PackageIdentifier" : "Clement.bottom",
+					"Version" : "0.6.8"
+				},
+				{
+					"PackageIdentifier" : "Nvidia.PhysX",
+					"Version" : "9.21.0713"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2010Redist-x86",
+					"Version" : "10.0.40219"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerToys",
+					"Version" : "0.55.1"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3",
+					"Version" : "3.10.2150.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2012Redist-x64",
+					"Version" : "11.0.61030.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.dotnetRuntime.5-x64",
+					"Version" : "5.0.14.30911"
+				},
+				{
+					"PackageIdentifier" : "Klocman.BulkCrapUninstaller",
+					"Version" : "5.2.0.0"
+				},
+				{
+					"PackageIdentifier" : "WindscribeLimited.Windscribe",
+					"Version" : "2.3 Build 16"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://winget.azureedge.net/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "1.1.13405"
+}
