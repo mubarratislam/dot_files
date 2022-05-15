@@ -47,6 +47,11 @@ Return
 Run, "C:\Program Files\Everything\Everything.exe"
 Return
 
+;Open SnippingTool
+#+s::
+Run, C:\Windows\system32\SnippingTool.exe
+Return
+
 ;***************************Windows Terminal***************************
 ;******************************Windows + T*****************************
 ;Open Windows Terminal
