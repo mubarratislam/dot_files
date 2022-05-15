@@ -21,3 +21,5 @@ Install-Module PSReadLine -Force
 
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
+
+Scott Hanselman WT Tutorial: https://www.youtube.com/watch?v=VT2L1SXFq9U
