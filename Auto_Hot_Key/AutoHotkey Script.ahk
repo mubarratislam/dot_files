@@ -79,7 +79,7 @@ Return
 
 
 ^!t::
-Run, D:\Tutorials\IT
+Run, D:\Tutorials\
 Return
 
 ^!d::
