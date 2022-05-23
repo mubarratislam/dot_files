@@ -9,7 +9,7 @@ if ($host.Name -eq 'ConsoleHost')
 Import-Module -Name Terminal-Icons
 
 oh-my-posh --init --shell pwsh --config C:\Users\Nibir\AppData\Local\Programs\oh-my-posh\themes/modified_by_nibir_9.omp.json | Invoke-Expression
-winfetch
+
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
