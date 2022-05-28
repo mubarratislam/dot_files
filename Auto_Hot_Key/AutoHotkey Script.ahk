@@ -49,7 +49,12 @@ Return
 
 ;Open SnippingTool
 #+s::
-Run, C:\Windows\system32\SnippingTool.exe
+Run, "C:\Windows\system32\SnippingTool.exe"
+Return
+
+;Open Microsoft powerBI
+#+b::
+Run, "C:\Program Files\Microsoft Power BI Desktop\bin\PBIDesktop.exe"
 Return
 
 ;***************************Windows Terminal***************************
