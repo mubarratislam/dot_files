@@ -1,12 +1,12 @@
 {
   // editor
   "editor.fontSize": 16,
-  "editor.tabSize": 2,
-  "editor.fontFamily": "Fira Code, Cascadia Code PL",
+  "editor.tabSize": 4,
+  "editor.fontFamily": "'JetBrainsMonoMedium NF Mono', 'FiraCode NF MONO', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": true,
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "vscode-icons",
   "editor.linkedEditing": true,
   "files.autoSave": "afterDelay",
 
@@ -26,31 +26,31 @@
   "editor.cursorBlinking": "expand",
 
   //config related to code formatting
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.organizeImports": true
-  },
-  "eslint.alwaysShowStatus": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.formatOnSave": true,
+  // "[javascript]": {
+  //   "editor.formatOnSave": false,
+  //   "editor.defaultFormatter": null
+  // },
+  // "[javascriptreact]": {
+  //   "editor.formatOnSave": false,
+  //   "editor.defaultFormatter": null
+  // },
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true,
+  //   "source.fixAll.tslint": true,
+  //   "source.organizeImports": true
+  // },
+  // "eslint.alwaysShowStatus": true,
 
   //terminal
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono Retina",
-  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.fontFamily": "JetBrainsMonoMedium Nerd Font Mono",
+  // "workbench.iconTheme": "vscode-icons",
   "liveServer.settings.donotShowInfoMsg": true,
-  "python.pythonPath": "C:\\Users\\nibir\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
-  "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
+  // "python.pythonPath": "C:\\Users\\nibir\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
   "liveServer.settings.donotVerifyTags": true,
   "vsicons.dontShowNewVersionMessage": true,
   "liveServer.settings.root": "",
@@ -59,5 +59,9 @@
   //telemetry service
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "workbench.colorTheme": "GitHub Dark"
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootPath}${separator}${appName}",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "python.defaultInterpreterPath": "C:\\Users\\Nibir\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "code-runner.runInTerminal": true,
+  "workbench.colorTheme": "One Dark Pro Darker"
 }
