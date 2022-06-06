@@ -1,0 +1,11 @@
+Live Server - Ritwick Dey
+Auto Close Tag - Jun Han
+Auto Rename Tag - Jun Han
+Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets for Visual studio code - Ashok Koyi
+CSS Peek - Pranay Prakash
+ES7+ React/Redux/React-Native/JS snippets - dsznajder
+ESlint - 
+HTML CSS Support - ecmel
+HTML Snippets - Mohamed Abusaid
+IntelliSense for CSS class names in HTML - Zignd
+JavaScript (ES6) code snippets - charalampos karypidis
