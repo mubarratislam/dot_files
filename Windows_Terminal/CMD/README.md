@@ -1,0 +1,1 @@
+Create a file at this path %LocalAppData%\clink\starship.lua
