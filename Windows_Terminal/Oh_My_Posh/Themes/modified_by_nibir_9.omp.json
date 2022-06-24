@@ -32,11 +32,12 @@
           "properties": {
             "folder_icon": "\uf07c ",
             "folder_separator_icon": " <#011627>\ue0b1</> ",
-            "home_icon": "\uf7db ",
+            // "home_icon": "\uf7db ",
             "style": "unique"
           },
           "style": "diamond",
-          "template": " {{ .Path }} ",
+          // "template": " {{ .Path }} ",
+          "template": " \ue5ff {{ .Path }} ",
           "trailing_diamond": "\ue0b0",
           "type": "path"
         },
