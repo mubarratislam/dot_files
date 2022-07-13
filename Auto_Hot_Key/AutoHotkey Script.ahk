@@ -47,9 +47,9 @@ Return
 Run, "C:\Program Files\Everything\Everything.exe"
 Return
 
-;Open SnippingTool
+;Open ShareX
 #+s::
-Run, "C:\Windows\system32\SnippingTool.exe"
+Run, "C:\Program Files\ShareX\ShareX.exe"
 Return
 
 ;Open Microsoft powerBI
@@ -57,10 +57,8 @@ Return
 Run, "C:\Program Files\Microsoft Power BI Desktop\bin\PBIDesktop.exe"
 Return
 
-;***************************Windows Terminal***************************
-;******************************Windows + T*****************************
 ;Open Windows Terminal
-#t::
+#+t::
 Run, WT
 Return
 
