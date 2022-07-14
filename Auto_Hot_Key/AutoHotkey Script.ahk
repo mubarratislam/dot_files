@@ -62,6 +62,11 @@ Return
 Run, WT
 Return
 
+;Open Avro Keyboard
+#+l::
+Run, "C:\Program Files (x86)\Avro Keyboard\Avro Keyboard.exe"
+Return
+
 ;********************************Website********************************
 ;******************************CTRL + SHIFT*****************************
 
