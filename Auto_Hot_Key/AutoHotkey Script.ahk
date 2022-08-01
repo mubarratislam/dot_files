@@ -47,9 +47,9 @@ Return
 Run, "C:\Program Files\Everything\Everything.exe"
 Return
 
-;Open ShareX
+;Open SnippingTool
 #+s::
-Run, "C:\Program Files\ShareX\ShareX.exe"
+Run, "C:\Windows\system32\SnippingTool.exe"
 Return
 
 ;Open Microsoft powerBI
@@ -57,14 +57,19 @@ Return
 Run, "C:\Program Files\Microsoft Power BI Desktop\bin\PBIDesktop.exe"
 Return
 
+;***************************Windows Terminal***************************
+;******************************Windows + T*****************************
 ;Open Windows Terminal
-#+t::
-Run, WT
-Return
+;#t::
+;Run, WT
+;Return
 
-;Open Avro Keyboard
-#+l::
-Run, "C:\Program Files (x86)\Avro Keyboard\Avro Keyboard.exe"
+
+;*********************************Hyper********************************
+;***************************Windows + Shift*****************************
+;Open Hyper Terminal
+#+t::
+Run, "C:\Users\Nibir\AppData\Local\Programs\Hyper\Hyper.exe"
 Return
 
 ;********************************Website********************************
