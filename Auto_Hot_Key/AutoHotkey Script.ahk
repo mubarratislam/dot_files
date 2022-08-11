@@ -47,29 +47,16 @@ Return
 Run, "C:\Program Files\Everything\Everything.exe"
 Return
 
-;Open SnippingTool
+;Open ShareX
 #+s::
-Run, "C:\Windows\system32\SnippingTool.exe"
-Return
-
-;Open Microsoft powerBI
-#+b::
-Run, "C:\Program Files\Microsoft Power BI Desktop\bin\PBIDesktop.exe"
+Run, "C:\Program Files\ShareX\ShareX.exe"
 Return
 
 ;***************************Windows Terminal***************************
 ;******************************Windows + T*****************************
 ;Open Windows Terminal
-;#t::
-;Run, WT
-;Return
-
-
-;*********************************Hyper********************************
-;***************************Windows + Shift*****************************
-;Open Hyper Terminal
 #+t::
-Run, "C:\Users\Nibir\AppData\Local\Programs\Hyper\Hyper.exe"
+Run, WT
 Return
 
 ;********************************Website********************************
