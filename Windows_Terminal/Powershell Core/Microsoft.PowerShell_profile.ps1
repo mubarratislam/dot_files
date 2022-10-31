@@ -8,8 +8,7 @@ if ($host.Name -eq 'ConsoleHost')
 
 Import-Module -Name Terminal-Icons
 
-oh-my-posh --init --shell pwsh --config C:\Users\Nibir\AppData\Local\Programs\oh-my-posh\themes/modified_by_nibir_9.omp.json | Invoke-Expression
-
+oh-my-posh --init --shell pwsh --config C:\Users\Nibir\AppData\Local\Programs\oh-my-posh\themes/modified_by_nibir_10.omp.json | Invoke-Expression
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
@@ -689,3 +688,60 @@ Set-PSReadLineOption -EditMode Windows
 #    [Microsoft.PowerShell.PSConsoleReadLine]::Insert("dotnet test")
 #    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 #}
+# Import the Chocolatey Profile that contains the necessary code to enable
+# tab-completions to function for `choco`.
+# Be aware that if you are missing these lines from your profile, tab completion
+# for `choco` will not function.
+# See https://ch0.co/tab-completion for details.
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
+
+
+###############################Short-cuts################################
+# Does the the rough equivalent of dir /s /b. For example, dirs *.png is dir /s /b *.png
+function dirs
+{
+    if ($args.Count -gt 0)
+    {
+        Get-ChildItem -Recurse -Include "$args" | Foreach-Object FullName
+    }
+    else
+    {
+        Get-ChildItem -Recurse | Foreach-Object FullName
+    }
+}
+
+# Simple function to start a new elevated process. If arguments are supplied then 
+# a single command is started with admin rights; if not then a new admin instance
+# of PowerShell is started.
+function admin
+{
+    if ($args.Count -gt 0)
+    {   
+       $argList = "& '" + $args + "'"
+       Start-Process "C:\Program Files\PowerShell\7\pwsh.exe" -Verb runAs -ArgumentList $argList
+    }
+    else
+    {
+       Start-Process "C:\Program Files\PowerShell\7\pwsh.exe" -Verb runAs
+    }
+}
+
+# Set UNIX-like aliases for the admin command, so sudo <command> will run the command
+# with elevated rights. 
+Set-Alias -Name su -Value admin
+Set-Alias -Name sudo -Value admin
+
+# function Edit-Profile
+# {
+#     if ($host.Name -match "ise")
+#     {
+#         $psISE.CurrentPowerShellTab.Files.Add($profile.CurrentUserAllHosts)
+#     }
+#     else
+#     {
+#         notepad $profile.CurrentUserAllHosts
+#     }
+# }
