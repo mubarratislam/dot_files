@@ -688,15 +688,6 @@ Set-PSReadLineOption -EditMode Windows
 #    [Microsoft.PowerShell.PSConsoleReadLine]::Insert("dotnet test")
 #    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 #}
-# Import the Chocolatey Profile that contains the necessary code to enable
-# tab-completions to function for `choco`.
-# Be aware that if you are missing these lines from your profile, tab completion
-# for `choco` will not function.
-# See https://ch0.co/tab-completion for details.
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
-}
 
 
 ###############################Short-cuts################################
@@ -770,10 +761,10 @@ function uptime {
         EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}
 }
 function reload-profile {
-        & $profile
+    & $profile
 }
 
-function find-file($name) {
+function ff ($name) {
     Get-ChildItem -recurse -filter "*${name}*" -ErrorAction SilentlyContinue | ForEach-Object {
             $place_path = $_.directory
             Write-Output "${place_path}\${_}"
@@ -799,4 +790,34 @@ function grep($regex, $dir) {
 # Touch
 function touch($file) {
     "" | Out-File $file -Encoding ASCII
+}
+
+function df {
+    get-volume
+}
+function sed($file, $find, $replace){
+    (Get-Content $file).replace("$find", $replace) | Set-Content $file
+}
+function which($name) {
+    Get-Command $name | Select-Object -ExpandProperty Definition
+}
+function export($name, $value) {
+    set-item -force -path "env:$name" -value $value;
+}
+function pkill($name) {
+    Get-Process $name -ErrorAction SilentlyContinue | Stop-Process
+}
+function pgrep($name) {
+    Get-Process $name
+}
+
+
+# Import the Chocolatey Profile that contains the necessary code to enable
+# tab-completions to function for `choco`.
+# Be aware that if you are missing these lines from your profile, tab completion
+# for `choco` will not function.
+# See https://ch0.co/tab-completion for details.
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
 }
