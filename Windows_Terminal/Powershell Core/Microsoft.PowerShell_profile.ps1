@@ -692,7 +692,7 @@ Set-PSReadLineOption -EditMode Windows
 
 ###############################Short-cuts################################
 # Does the the rough equivalent of dir /s /b. For example, dirs *.png is dir /s /b *.png
-function dirs
+function lss
 {
     if ($args.Count -gt 0)
     {
@@ -811,6 +811,9 @@ function pgrep($name) {
     Get-Process $name
 }
 
+function lsh {
+    Get-ChildItem -Force
+}
 
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.
