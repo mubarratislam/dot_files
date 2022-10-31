@@ -757,8 +757,9 @@ Function Get-PubIP {
  (Invoke-WebRequest http://ifconfig.me/ip ).Content
 }
 function uptime {
-        Get-CimInstance win32_operatingsystem | Select-Object csname, @{LABEL='LastBootUpTime';
-        EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}
+        # Get-CimInstance win32_operatingsystem | Select-Object csname, @{LABEL='LastBootUpTime';
+        # EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}
+        Get-CimInstance win32_operatingsystem | Select-Object csname, LastBootUpTime
 }
 function reload-profile {
     & $profile
