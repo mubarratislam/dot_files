@@ -740,12 +740,12 @@ Set-Alias -Name sudo -Value admin
 function ll { Get-ChildItem -Path $pwd -File }
 # function g { Set-Location $HOME\Documents\Github }
 
-function gcom
+function gc
 {
 	git add .
 	git commit -m "$args"
 }
-function lazyg
+function gall
 {
 	git add .
 	git commit -m "$args"
