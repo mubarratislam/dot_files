@@ -745,3 +745,30 @@ Set-Alias -Name sudo -Value admin
 #         notepad $profile.CurrentUserAllHosts
 #     }
 # }
+
+function ll { Get-ChildItem -Path $pwd -File }
+# function g { Set-Location $HOME\Documents\Github }
+
+function gcom
+{
+	git add .
+	git commit -m "$args"
+}
+function lazyg
+{
+	git add .
+	git commit -m "$args"
+	git push
+}
+
+# Get the public IP
+Function Get-PubIP {
+ (Invoke-WebRequest http://ifconfig.me/ip ).Content
+}
+function uptime {
+        Get-CimInstance win32_operatingsystem | Select-Object csname, @{LABEL='LastBootUpTime';
+        EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}
+}
+function reload-profile {
+        & $profile
+}
