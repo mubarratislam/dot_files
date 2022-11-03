@@ -712,11 +712,11 @@ function admin
     if ($args.Count -gt 0)
     {   
        $argList = "& '" + $args + "'"
-       Start-Process "C:\Program Files\PowerShell\7\pwsh.exe" -Verb runAs -ArgumentList $argList
+       Start-Process "C:\Users\Nibir\AppData\Local\Microsoft\WindowsApps\wt.exe" -Verb runAs -ArgumentList $argList
     }
     else
     {
-       Start-Process "C:\Program Files\PowerShell\7\pwsh.exe" -Verb runAs
+       Start-Process "C:\Users\Nibir\AppData\Local\Microsoft\WindowsApps\wt.exe" -Verb runAs
     }
 }
 
@@ -812,6 +812,7 @@ function pgrep($name) {
     Get-Process $name
 }
 
+# ls with hidden file
 function lsh {
     Get-ChildItem -Force
 }
