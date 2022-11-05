@@ -19,6 +19,7 @@
           "leading_diamond": "<transparent,#DE2121>\ue0b0</>",
           "style": "diamond",
           "template": " \uf0e7 ",
+          "home_icon": "~",
           "trailing_diamond": "\ue0b0",
           "type": "root"
         },
@@ -27,10 +28,10 @@
           "foreground": "#0C212F",
           "leading_diamond": "<transparent,#26BDBB>\ue0b0</>",
           "properties": {
-            "folder_icon": "\uf6d7",
+            "folder_icon": "..\ue5fe..",
             "folder_separator_icon": "<transparent> \ue0b1 </>",
             "home_icon": "\uf7db",
-            "style": "folder"
+            "style": "agnoster_short"
           },
           "style": "diamond",
           "template": " {{ .Path }} ",
