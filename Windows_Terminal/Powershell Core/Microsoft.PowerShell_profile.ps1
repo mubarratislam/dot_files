@@ -775,9 +775,16 @@ function ff ($name) {
 # Unzipping file
 function unzip ($file) {
     Write-Output("Extracting", $file, "to", $pwd)
-$fullFile = Get-ChildItem -Path $pwd -Filter .\cove.zip | ForEach-Object{$_.FullName}
+$fullFile = Get-ChildItem -Path $pwd -Filter $file | ForEach-Object{$_.FullName}
     Expand-Archive -Path $fullFile -DestinationPath $pwd
 }
+
+# # zipping file
+# function zip ($file) {
+#     Write-Output("Compressing", $file, "to", $pwd)
+# $fullFile = Get-ChildItem -Path $pwd -Filter $file | ForEach-Object{$_.FullName}
+#     Compress-Archive -Path $fullFile -DestinationPath $pwd
+# }
 
 # Grep
 function grep($regex, $dir) {
