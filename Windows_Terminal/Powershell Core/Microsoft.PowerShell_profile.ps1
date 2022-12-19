@@ -8,7 +8,7 @@ if ($host.Name -eq 'ConsoleHost')
 
 Import-Module -Name Terminal-Icons
 
-oh-my-posh --init --shell pwsh --config C:\Users\Nibir\AppData\Local\Programs\oh-my-posh\themes/modified_by_nibir_10.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config C:\Users\Nibir\AppData\Local\Programs\oh-my-posh\themes/catppuccin_frappe.omp.json | Invoke-Expression
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
@@ -812,9 +812,13 @@ function which($name) {
 function export($name, $value) {
     set-item -force -path "env:$name" -value $value;
 }
+
+#Kill Process
 function pkill($name) {
     Get-Process $name -ErrorAction SilentlyContinue | Stop-Process
 }
+
+#Find Process by Name
 function pgrep($name) {
     Get-Process $name
 }
@@ -822,6 +826,11 @@ function pgrep($name) {
 # ls with hidden file
 function lsh {
     Get-ChildItem -Force
+}
+
+# Open Windows Exlorer
+function fm {
+    explorer .
 }
 
 # Import the Chocolatey Profile that contains the necessary code to enable
