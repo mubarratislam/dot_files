@@ -25,7 +25,7 @@ Return
 
 ;Open MS Word
 #+w:: ; Press "Windows key" + "Shift" + w
-Run, %A_ProgramFiles%\Microsoft Office\root\Office16\WINWORD.EXE
+Run, "C:\Program Files (x86)\Microsoft Office\root\Office16\WINWORD.EXE"
 Return
 
 ;Open MS Excel
@@ -39,7 +39,7 @@ Return
 
 ;Open MS Access
 #+a::
-Run, %A_ProgramFiles%\Microsoft Office\root\Office16\MSACCESS.EXE
+Run, "C:\Program Files (x86)\Microsoft Office\root\Office16\MSACCESS.EXE"
 Return
 
 ;Open EveryThing
@@ -88,6 +88,10 @@ Return
 
 ^!i::
 Run, D:\IUB
+Return
+
+^!j::
+Run, D:\Tangerine Limited
 Return
 
 ;*******************************Close Active Window********************
