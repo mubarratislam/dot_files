@@ -19,7 +19,7 @@ Run %A_ProgramFiles%\Google\Chrome\Application\chrome.exe
 Return
 
 ;Open VS code
-#+c::
+#+v::
 Run "C:\Users\Nibir\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 Return
 
