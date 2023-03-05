@@ -94,6 +94,10 @@ Return
 Run, D:\Tangerine Limited
 Return
 
+^!g::
+Run, D:\Gallary
+Ruturn
+
 ;*******************************Close Active Window********************
 
 
