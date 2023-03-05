@@ -96,7 +96,7 @@ Return
 
 ^!g::
 Run, D:\Gallary
-Ruturn
+Return
 
 ;*******************************Close Active Window********************
 
