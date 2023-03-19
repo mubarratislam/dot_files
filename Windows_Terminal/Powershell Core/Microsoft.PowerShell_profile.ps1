@@ -664,7 +664,7 @@ Set-PSReadLineKeyHandler -Key Alt+a `
 }
 
 
-Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 
@@ -742,14 +742,14 @@ function ll { Get-ChildItem -Path $pwd -File }
 
 function gc
 {
-	git add .
-	git commit -m "$args"
+    git add .
+    git commit -m "$args"
 }
 function gall
 {
-	git add .
-	git commit -m "$args"
-	git push
+    git add .
+    git commit -m "$args"
+    git push
 }
 
 # Get the public IP
@@ -831,6 +831,11 @@ function lsh {
 # Open Windows Exlorer
 function fm {
     explorer .
+}
+
+# See WiFi Password
+function WiFi-Pass {
+    (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Format-Table -AutoSize
 }
 
 # Import the Chocolatey Profile that contains the necessary code to enable
