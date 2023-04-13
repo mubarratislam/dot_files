@@ -24,8 +24,8 @@ Run "C:\Users\Nibir\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 Return
 
 ;Open MS Word
-#+w:: ; Press "Windows key" + "Shift" + w
-Run, "C:\Program Files (x86)\Microsoft Office\root\Office16\WINWORD.EXE"
+#+w:: ;
+Run, "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
 Return
 
 ;Open MS Excel
@@ -40,6 +40,11 @@ Return
 ;Open MS Access
 #+a::
 Run, "C:\Program Files (x86)\Microsoft Office\root\Office16\MSACCESS.EXE"
+Return
+
+;Open PowerBI
+#+b::
+Run, "C:\Program Files\Microsoft Power BI Desktop\bin\PBIDesktop.exe"
 Return
 
 ;Open EveryThing
@@ -91,11 +96,15 @@ Run, D:\IUB
 Return
 
 ^!j::
-Run, D:\Tangerine Limited
+Run, D:\Work
 Return
 
 ^!g::
 Run, D:\Gallary
+Return
+
+^!s::
+Run, D:\Software
 Return
 
 ;*******************************Close Active Window********************
