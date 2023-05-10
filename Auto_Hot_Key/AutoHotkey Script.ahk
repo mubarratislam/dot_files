@@ -84,7 +84,7 @@ Return
 
 
 ^!t::
-Run, D:\Tutorials\
+Run, D:\Gallary\04_Tutorials
 Return
 
 ^!d::
