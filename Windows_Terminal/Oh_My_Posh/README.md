@@ -1,23 +1,27 @@
 Steps :
+
 Install Windows Terminal
+Install Nard Font
 
-Install-Module oh-my-posh -Scope CurrentUser
+Command: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
-notepad C:\Users\Nibir\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+Command: winget install JanDeDobbeleer.OhMyPosh -s winget
 
-Import-Module oh-my-posh
-oh-my-posh --init --shell pwsh --config C:\Users\Nibir\AppData\Local\Programs\oh-my-posh\themes/modified_by_nibir_9.omp.json | Invoke-Expression
+Command: notepad $profile
 
-https://ohmyposh.dev/docs/themes
+Paste in the profile(Path of the theme): oh-my-posh --init --shell pwsh --config C:\Users\Nibir\AppData\Local\Programs\oh-my-posh\themes/modified_by_nibir_9.omp.json | Invoke-Expression
 
-Import-Module -Name Terminal-Icons
+Command: Install-Module -Name Terminal-Icons -Repository PSGallery
+
+Paste in profile: Import-Module -Name Terminal-Icons
 
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 
-Install Caskaydiacove Nerd Font 
-https://www.nerdfonts.com/font-downloads
+!!Important Links:
 
-Install-Module PSReadLine -Force
+PSReadLines: https://www.powershellgallery.com/packages/PSReadLine/2.2.6
+
+Install Caskaydiacove Nerd Font: https://www.nerdfonts.com/font-downloads
 
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
