@@ -100,7 +100,7 @@ Run, D:\Work
 Return
 
 ^!g::
-Run, D:\Gallary
+Run, D:\06_Gallary
 Return
 
 ^!s::
