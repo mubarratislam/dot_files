@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -20,7 +20,7 @@ Return
 
 ;Open VS code
 #+v::
-Run "C:\Users\Nibir\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+Run "C:\Users\Put_the_User_Name_Here\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 Return
 
 ;Open MS Word
@@ -97,7 +97,7 @@ Run, D:\Gallary\04_Tutorials
 Return
 
 ^!d::
-Run, C:\Users\Nibir\Downloads
+Run, C:\Users\Put_the_User_Name_Here\Downloads
 Return
 
 ^!i::
